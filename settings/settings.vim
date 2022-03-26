@@ -13,6 +13,7 @@
 "Key Mappings
 let g:mapleader = "\<Space>"
 imap jk <Esc>
+nmap <leader>r :source ~/.config/nvim/init.vim<CR>
 
 "Autocmd
 autocmd TermOpen * set nonumber

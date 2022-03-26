@@ -12,6 +12,7 @@ let g:which_key_map.f = {
 	\ 'G': 'git_files',
 	\ }
 
+"Git
 let g:which_key_map.g = {
 	\ 'name': '+git',
 	\ 'j': 'next-hunk',
@@ -23,7 +24,13 @@ let g:which_key_map.g = {
 	\ 'd': 'diff',
 	\ 'c': 'commit',
 	\ 'p': 'push',
+	\ 'b': 'browse',
+	\ 'v': 'commit-browser',
+	\ 'V': 'commit-file-browser',
 	\ }
+
+"ETC
+let g:which_key_map.r = 'source'
 
 "Key Mappings
 call which_key#register('<Space>', "g:which_key_map")
