@@ -29,6 +29,14 @@ let g:which_key_map.g = {
 	\ 'V': 'commit-file-browser',
 	\ }
 
+"Startify
+let g:which_key_map.s = {
+	\ 'name': '+startify',
+	\ 'c': 'close',
+	\ 'l': 'load',
+	\ 's': 'save',
+	\ 'S': 'startify',
+	\ }
 "ETC
 let g:which_key_map.r = 'source'
 

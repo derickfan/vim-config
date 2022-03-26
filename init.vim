@@ -9,6 +9,7 @@ source $HOME/.config/nvim/modules/telescope.vim
 source $HOME/.config/nvim/modules/signify.vim
 source $HOME/.config/nvim/modules/fugitive.vim
 source $HOME/.config/nvim/modules/which-key.vim
+source $HOME/.config/nvim/modules/startify.vim
 
 "Themes
 source $HOME/.config/nvim/theme/theme.vim

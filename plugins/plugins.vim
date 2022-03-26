@@ -19,5 +19,6 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+Plug 'mhinz/vim-startify'
 
 call plug#end()
