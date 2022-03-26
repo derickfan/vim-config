@@ -11,3 +11,4 @@ nmap <leader>gp :Git push<CR>
 nmap <leader>gb :GBrowse<CR>
 nmap <leader>gv :GV<CR>
 nmap <leader>gV :GV!<CR>
+nmap <leader>ge :Git<CR>

@@ -19,6 +19,7 @@ let g:which_key_map.g = {
 	\ 'k': 'prev-hunk',
 	\ 't': 'toggle-hunk',
 	\ 'a': 'add',
+	\ 'e': 'edit',
 	\ 's': 'status',
 	\ 'l': 'log',
 	\ 'd': 'diff',
