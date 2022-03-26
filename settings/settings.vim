@@ -8,8 +8,9 @@
 :set softtabstop=4
 :set cursorline
 :set mouse=a
+:set timeoutlen=500
 
 "Key Mappings
-let mapleader = " "
+let g:mapleader = "\<Space>"
 imap jk <Esc>
 

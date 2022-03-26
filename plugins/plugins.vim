@@ -14,5 +14,6 @@ Plug 'sunjon/shade.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
