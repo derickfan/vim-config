@@ -8,5 +8,5 @@ source $HOME/.config/nvim/modules/tagbar.vim
 source $HOME/.config/nvim/modules/telescope.vim
 
 "Themes
-source $HOME/.config/nvim/modules
+source $HOME/.config/nvim/theme/theme.vim
 
