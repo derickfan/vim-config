@@ -6,6 +6,8 @@ source $HOME/.config/nvim/plugins/plugins.vim
 source $HOME/.config/nvim/modules/nerdtree.vim
 source $HOME/.config/nvim/modules/tagbar.vim
 source $HOME/.config/nvim/modules/telescope.vim
+source $HOME/.config/nvim/modules/signify.vim
+source $HOME/.config/nvim/modules/fugitive.vim
 source $HOME/.config/nvim/modules/which-key.vim
 
 "Themes
