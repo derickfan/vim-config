@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'pangloss/vim-javascript'
