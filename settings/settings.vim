@@ -14,3 +14,6 @@
 let g:mapleader = "\<Space>"
 imap jk <Esc>
 
+"Autocmd
+autocmd TermOpen * set nonumber
+autocmd TermOpen * set norelativenumber
