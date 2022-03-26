@@ -8,3 +8,5 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-g> :NERDTreeFind<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+"Auto
+autocmd VimEnter * NERDTree
