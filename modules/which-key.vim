@@ -25,6 +25,7 @@ let g:which_key_map.g = {
 	\ 'd': 'diff',
 	\ 'c': 'commit',
 	\ 'p': 'push',
+	\ 'P': 'pull',
 	\ 'b': 'browse',
 	\ 'v': 'commit-browser',
 	\ 'V': 'commit-file-browser',
