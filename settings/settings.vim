@@ -11,6 +11,7 @@
 :set timeoutlen=500
 :set hidden
 :set splitbelow
+:set splitright
 
 "Key Mappings
 let g:mapleader = "\<Space>"
