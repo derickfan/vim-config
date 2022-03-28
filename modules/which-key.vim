@@ -39,6 +39,7 @@ let g:which_key_map.s = {
 	\ 's': 'save',
 	\ 'S': 'startify',
 	\ }
+
 "ETC
 let g:which_key_map.r = 'source'
 

@@ -20,6 +20,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-startify'
-Plug 'akinsho/toggleterm.nvim'
 
 call plug#end()

@@ -9,11 +9,14 @@
 :set cursorline
 :set mouse=a
 :set timeoutlen=500
+:set hidden
+:set splitbelow
 
 "Key Mappings
 let g:mapleader = "\<Space>"
 imap jk <Esc>
 nmap <leader>r :source ~/.config/nvim/init.vim<CR>
+tnoremap <Esc> <C-\><C-n>
 
 "Pane Navigation
 nnoremap <C-h> <C-w>h
