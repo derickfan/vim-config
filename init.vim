@@ -10,6 +10,7 @@ source $HOME/.config/nvim/modules/signify.vim
 source $HOME/.config/nvim/modules/fugitive.vim
 source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/startify.vim
+source $HOME/.config/nvim/modules/toggleterm.vim
 
 "Themes
 source $HOME/.config/nvim/theme/theme.vim
