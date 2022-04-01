@@ -12,6 +12,7 @@ vim.opt.smartindent = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.swapfile = false
+vim.opt.termguicolors = true
 vim.opt.timeoutlen = 500
 vim.opt.undofile = true
 vim.opt.writebackup = false
