@@ -11,6 +11,13 @@ whichkey.register({
     f = { ":Telescope find_files<CR>", "find files" },
     s = { ":Telescope live_grep<CR>", "live grep" },
   },
+  s = {
+    name = "+session",
+    c = { ":SClose<CR>", "close" },
+    l = { ":SLoad<CR>", "load" },
+    s = { ":SSave<CR>", "save" },
+    S = { ":Startify<CR>", "startify" }
+  },
   t = {
     name = "+terminal",
     n = { "<cmd>lua Nodeterm_toggle()<CR>", "node term" },

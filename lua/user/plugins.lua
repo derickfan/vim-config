@@ -77,6 +77,8 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
 
+  use "mhinz/vim-startify"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

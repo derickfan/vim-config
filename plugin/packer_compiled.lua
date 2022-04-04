@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/derickfan/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/derickfan/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/derickfan/.local/share/nvim/site/pack/packer/start/which-key.nvim",
