@@ -4,5 +4,5 @@ if not cmp_status_ok then
 end
 
 autopair.setup{
-  
+
 }
