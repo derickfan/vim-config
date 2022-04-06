@@ -79,6 +79,8 @@ return packer.startup(function(use)
 
   use "mhinz/vim-startify"
 
+  use "lewis6991/gitsigns.nvim"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

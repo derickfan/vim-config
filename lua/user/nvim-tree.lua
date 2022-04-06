@@ -8,6 +8,7 @@ nvim_tree.setup {
   -- disable_netrw = true,
   hide_root_folder = true,
   open_on_setup = false,
+  update_cwd = true,
   hijack_netrw = true,
   hijack_cursor = true,
   view = {
@@ -22,7 +23,7 @@ nvim_tree.setup {
         { key = {"<2-RightMouse>", "<C-]>"},    action = "cd" },
         { key = "V",                            action = "vsplit" },
         { key = "X",                            action = "split" },
-        { key = "t",                        action = "tabnew" },
+        { key = "t",                            action = "tabnew" },
         { key = "<",                            action = "prev_sibling" },
         { key = ">",                            action = "next_sibling" },
         { key = "P",                            action = "parent_node" },
