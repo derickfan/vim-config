@@ -9,8 +9,8 @@ telescope.setup {
       -- theme = "ivy",
       layout_strategy = 'horizontal',
       layout_config = {
-        height = 0.5,
-        width = 0.5,
+        height = 25,
+        width = 100,
         -- prompt_position = 'top',
         anchor = 'top',
         preview_width = 0, --hide preview window

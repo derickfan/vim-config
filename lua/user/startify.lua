@@ -6,12 +6,20 @@
 vim.g.startify_lists = {
   {
     type = "sessions",
-    header = { "Sessions" }
+    header = {"Sessions"}
   },
   {
     type = "files",
     header = {"Files"}
-  }
+  },
+  {
+    type = "dir",
+    header = {"Folders"}
+  },
+  {
+    type = "bookmarks",
+    header = {"Bookmarks"}
+  },
 }
 
 vim.g.startify_session_before_save = {"silent! tabdo NvimTreeClose"}

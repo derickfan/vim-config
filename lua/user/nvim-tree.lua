@@ -7,10 +7,13 @@ nvim_tree.setup {
   auto_reload_on_write = true,
   -- disable_netrw = true,
   hide_root_folder = true,
-  open_on_setup = false,
+  -- open_on_setup = false,
   update_cwd = true,
   hijack_netrw = true,
   hijack_cursor = true,
+  ignore_ft_on_setup = {
+    "startify"
+  },
   view = {
     width = 25,
     height = 30,

@@ -14,6 +14,7 @@ whichkey.register({
   s = {
     name = "+session",
     c = { ":SClose<CR>", "close" },
+    d = { ":SDelete<CR>", "delete" },
     l = { ":SLoad<CR>", "load" },
     s = { ":SSave<CR>", "save" },
     S = { ":Startify<CR>", "startify" }
@@ -24,7 +25,8 @@ whichkey.register({
     p = { "<cmd>lua Pythonterm_toggle()<CR>", "python term"},
     s = { "<cmd>lua Scalaterm_toggle()<CR>", "scala term"}
   },
-  r = {":luafile %<CR>", "source"}
+  r = {":luafile %<CR>", "source"},
+  w = {":w<CR>", "save"},
 },
 {
   prefix = "<leader>",
