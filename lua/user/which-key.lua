@@ -11,6 +11,16 @@ whichkey.register({
     f = { ":Telescope find_files<CR>", "find files" },
     s = { ":Telescope live_grep<CR>", "live grep" },
   },
+  g = {
+    b = { ":Git branch<CR>", "branch" },
+    c = { ":Git commit<CR>", "commit" },
+    C = { ":Git commit --amend<CR>", "amend" },
+    g = { ":Git<CR>", "git" },
+    l = { ":Git log<CR>", "log" },
+    s = { ":Ghdiffsplit<CR>", "diff split" },
+    p = { ":Git pull<CR>", "pull" },
+    P = { ":Git push<CR>", "push" },
+  },
   s = {
     name = "+session",
     c = { ":SClose<CR>", "close" },

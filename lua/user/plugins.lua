@@ -80,6 +80,8 @@ return packer.startup(function(use)
   use "mhinz/vim-startify"
 
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-rhubarb"
+  use "tpope/vim-fugitive"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
