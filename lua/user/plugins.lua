@@ -60,6 +60,8 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
 
+  use "scalameta/nvim-metals"
+
   use "windwp/nvim-autopairs"
 
   use "nvim-telescope/telescope.nvim"
