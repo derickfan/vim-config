@@ -7,11 +7,14 @@ whichkey.register({
   f = {
     name = "+telescope",
     b = { ":Telescope git_branches<CR>", "git branches" },
+    B = { ":Telescope buffers<CR>", "buffers" },
     c = { ":Telescope commands<CR>", "commands" },
     f = { ":Telescope find_files<CR>", "find files" },
+    h = { ":Telescope oldfiles<CR>", "file history" },
     s = { ":Telescope live_grep<CR>", "live grep" },
   },
   g = {
+    name = "+git",
     b = { ":Git branch<CR>", "branch" },
     c = { ":Git commit<CR>", "commit" },
     C = { ":Git commit --amend<CR>", "amend" },
