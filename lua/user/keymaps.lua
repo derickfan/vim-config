@@ -1,6 +1,7 @@
 local opts = { noremap = true, silent = true }
 
 -- local term_opts = { silent = true }
+local escapeTerm = "<C-\\><C-n>"
 
 local keymap = vim.api.nvim_set_keymap
 
@@ -13,6 +14,10 @@ keymap("n", "<M-j>", "<C-w>j", opts)
 keymap("n", "<M-k>", "<C-w>k", opts)
 keymap("n", "<M-l>", "<C-w>l", opts)
 keymap("n", "<M-h>", "<C-w>h", opts)
+keymap("t", "<M-j>", escapeTerm .. "<C-w>j", opts)
+keymap("t", "<M-k>", escapeTerm .. "<C-w>k", opts)
+keymap("t", "<M-l>", escapeTerm .. "<C-w>l", opts)
+keymap("t", "<M-h>", escapeTerm .. "<C-w>h", opts)
 
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
 
@@ -39,7 +44,4 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 keymap("n", "<C-]>", ":CommentToggle<CR>", opts)
 keymap("v", "<C-]>", ":CommentToggle<CR>", opts)
-
--- keymap("n", "<C-t>", ":ToggleTerm<CR>", opts)
--- keymap("t", "<C-t>", "<C-\\><C-n>:ToggleTerm<CR>", opts)
 

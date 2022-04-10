@@ -35,12 +35,13 @@ whichkey.register({
   t = {
     name = "+terminal",
     n = { "<cmd>lua Nodeterm_toggle(\"horizontal\")<CR>", "node term" },
-    p = { "<cmd>lua Pythonterm_toggle(\"horizontal\")<CR>", "python term"},
-    s = { "<cmd>lua Scalaterm_toggle(\"horizontal\")<CR>", "scala term"},
     N = { "<cmd>lua Nodeterm_toggle(\"float\")<CR>", "node float" },
+    p = { "<cmd>lua Pythonterm_toggle(\"horizontal\")<CR>", "python term"},
     P = { "<cmd>lua Pythonterm_toggle(\"float\")<CR>", "python float"},
+    s = { "<cmd>lua Scalaterm_toggle(\"horizontal\")<CR>", "scala term"},
     S = { "<cmd>lua Scalaterm_toggle(\"float\")<CR>", "scala float"},
-
+    t = { "<cmd>lua Term_toggle(\"horizontal\")<CR>", "normal term"},
+    T = { "<cmd>lua Term_toggle(\"float\")<CR>", "normal float"},
   },
   r = {":luafile %<CR>", "source"},
   w = {":w<CR>", "save"},

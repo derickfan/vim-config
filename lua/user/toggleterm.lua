@@ -3,7 +3,6 @@ if not cmp_status_ok then
   return
 end
 
-
 toggleterm.setup {
   direction = "float",
   open_mapping = [[<C-t>]],
@@ -14,6 +13,20 @@ toggleterm.setup {
 }
 
 local Terminal = require("toggleterm.terminal").Terminal
+
+local terminal
+function Term_toggle(direction)
+  if terminal == nil then
+    terminal = Terminal:new({
+      hidden = false,
+      direction = direction,
+      on_exit = function ()
+        terminal = nil
+      end
+    })
+  end
+  terminal:toggle()
+end
 
 local nodeterminal
 function Nodeterm_toggle(direction)
