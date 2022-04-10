@@ -3,6 +3,7 @@ if not cmp_status_ok then
   return
 end
 
+
 toggleterm.setup {
   direction = "float",
   open_mapping = [[<C-t>]],
@@ -14,18 +15,48 @@ toggleterm.setup {
 
 local Terminal = require("toggleterm.terminal").Terminal
 
-local nodeterminal = Terminal:new({ cmd = "node", hidden = true })
-function Nodeterm_toggle()
+local nodeterminal
+function Nodeterm_toggle(direction)
+  if nodeterminal == nil then
+    nodeterminal = Terminal:new({
+      cmd = "node",
+      hidden = false,
+      direction = direction,
+      on_exit = function ()
+        nodeterminal = nil
+      end
+    })
+  end
   nodeterminal:toggle()
 end
 
-local pythonterminal = Terminal:new({ cmd = "python3", hidden = true })
-function Pythonterm_toggle()
+local pythonterminal
+function Pythonterm_toggle(direction)
+  if pythonterminal == nil then
+    pythonterminal = Terminal:new({
+      cmd = "python3",
+      hidden = false,
+      direction = direction,
+      on_exit = function ()
+        pythonterminal = nil
+      end
+    })
+  end
   pythonterminal:toggle()
 end
 
-local scalaterminal = Terminal:new({ cmd = "scala", hidden = true })
-function Scalaterm_toggle()
+local scalaterminal
+function Scalaterm_toggle(direction)
+  if scalaterminal == nil then
+    scalaterminal = Terminal:new({
+      cmd = "scala",
+      hidden = false,
+      direction = direction,
+      on_exit = function ()
+        scalaterminal = nil
+      end
+    })
+  end
   scalaterminal:toggle()
 end
 
