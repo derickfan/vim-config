@@ -8,68 +8,24 @@ toggleterm.setup {
   open_mapping = [[<C-t>]],
   float_opts = {
     border = "curved",
-    height = 25,
+    -- height = 25,
   }
 }
 
 local Terminal = require("toggleterm.terminal").Terminal
 
-local terminal
-function Term_toggle(direction)
-  if terminal == nil then
-    terminal = Terminal:new({
+local terminals = {}
+function ToggleTerminal(cmd, direction)
+  if terminals[cmd] == nil then
+    terminals[cmd] = Terminal:new({
+      cmd = cmd ~= "" and cmd or nil,
       hidden = false,
       direction = direction,
       on_exit = function ()
-        terminal = nil
+        terminals[cmd] = nil
       end
     })
   end
-  terminal:toggle()
-end
-
-local nodeterminal
-function Nodeterm_toggle(direction)
-  if nodeterminal == nil then
-    nodeterminal = Terminal:new({
-      cmd = "node",
-      hidden = false,
-      direction = direction,
-      on_exit = function ()
-        nodeterminal = nil
-      end
-    })
-  end
-  nodeterminal:toggle()
-end
-
-local pythonterminal
-function Pythonterm_toggle(direction)
-  if pythonterminal == nil then
-    pythonterminal = Terminal:new({
-      cmd = "python3",
-      hidden = false,
-      direction = direction,
-      on_exit = function ()
-        pythonterminal = nil
-      end
-    })
-  end
-  pythonterminal:toggle()
-end
-
-local scalaterminal
-function Scalaterm_toggle(direction)
-  if scalaterminal == nil then
-    scalaterminal = Terminal:new({
-      cmd = "scala",
-      hidden = false,
-      direction = direction,
-      on_exit = function ()
-        scalaterminal = nil
-      end
-    })
-  end
-  scalaterminal:toggle()
+  terminals[cmd]:toggle()
 end
 
