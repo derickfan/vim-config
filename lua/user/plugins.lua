@@ -64,7 +64,10 @@ return packer.startup(function(use)
 
   use "windwp/nvim-autopairs"
 
-  use "nvim-telescope/telescope.nvim"
+  use {
+    "nvim-telescope/telescope.nvim",
+    commit = "b7ae91c82b33f8f347fa060208adb3da80ae9260"
+  }
   use "nvim-telescope/telescope-media-files.nvim"
 
   use "terrortylor/nvim-comment"
