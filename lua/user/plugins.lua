@@ -90,6 +90,8 @@ return packer.startup(function(use)
 
   use "nvim-orgmode/orgmode"
 
+  use "akinsho/bufferline.nvim"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
