@@ -6,9 +6,10 @@ end
 marks.setup {
   default_mappings = false,
   mappings = {
-    set_next = "<leader>mc",
+    set_next = "m,",
+    toggle = "m;",
     next = "<C-n>",
     prev = "<C-p>",
-    delete = "dm"
+    delete = "d"
   }
 }
