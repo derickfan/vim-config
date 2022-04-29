@@ -45,3 +45,4 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<C-]>", ":CommentToggle<CR>", opts)
 keymap("v", "<C-]>", ":CommentToggle<CR>", opts)
 
+keymap("t", "<Esc>", "<C-\\><C-n>", opts)
