@@ -1,0 +1,14 @@
+local cmp_status_ok, marks = pcall(require, "marks")
+if not cmp_status_ok then
+  return
+end
+
+marks.setup {
+  default_mappings = false,
+  mappings = {
+    set_next = "<leader>mc",
+    next = "<C-n>",
+    prev = "<C-p>",
+    delete = "dm"
+  }
+}

@@ -92,6 +92,8 @@ return packer.startup(function(use)
 
   use "akinsho/bufferline.nvim"
 
+  use "chentau/marks.nvim"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
