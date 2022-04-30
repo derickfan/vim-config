@@ -10,6 +10,6 @@ marks.setup {
     toggle = "m;",
     next = "<C-n>",
     prev = "<C-p>",
-    delete = "d"
+    delete = "dm"
   }
 }

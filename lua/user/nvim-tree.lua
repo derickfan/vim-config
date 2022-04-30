@@ -6,7 +6,6 @@ end
 nvim_tree.setup {
   auto_reload_on_write = true,
   -- disable_netrw = true,
-  hide_root_folder = true,
   -- open_on_setup = false,
   update_cwd = true,
   hijack_netrw = true,
@@ -18,6 +17,7 @@ nvim_tree.setup {
     width = 25,
     height = 30,
     signcolumn = "no",
+    hide_root_folder = true,
     mappings = {
       list = {
         { key = {"<CR>", "o", "<2-LeftMouse>"}, action = "edit" },
@@ -64,7 +64,6 @@ nvim_tree.setup {
   git = {
     enable = false,
   },
-  show_icons = false,
   actions = {
     open_file = {
       quit_on_open = false,
