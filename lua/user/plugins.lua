@@ -50,7 +50,10 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
-  use "saadparwaiz1/cmp_luasnip"
+  use {
+    "saadparwaiz1/cmp_luasnip",
+    commit = "b10829736542e7cc9291e60bab134df1273165c9"
+  }
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
@@ -79,6 +82,7 @@ return packer.startup(function(use)
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    commit = "bc25a6a5c4fd659bbf78ba0a2442ecf14eb00398"
   }
   use "p00f/nvim-ts-rainbow"
 
