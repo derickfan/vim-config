@@ -91,6 +91,7 @@ return packer.startup(function(use)
   use "nvim-orgmode/orgmode"
 
   use "akinsho/bufferline.nvim"
+  use "kazhala/close-buffers.nvim"
 
   use "chentau/marks.nvim"
 

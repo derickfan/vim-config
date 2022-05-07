@@ -4,6 +4,11 @@ if not cmp_status_ok then
 end
 
 whichkey.register({
+  b = {
+    name = "+buffers",
+    d = { ":BDelete this<CR>", "delete current" },
+    o = { ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", "delete other"}
+  },
   f = {
     name = "+telescope",
     b = { ":Telescope git_branches<CR>", "git branches" },
