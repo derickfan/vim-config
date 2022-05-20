@@ -17,6 +17,6 @@ bufferline.setup {
         text_align = "center"
       }
     },
-    always_show_bufferline = false
+    always_show_bufferline = true
   }
 }
