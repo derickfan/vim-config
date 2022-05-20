@@ -1,106 +1,55 @@
-local fn = vim.fn
+local Plug = vim.fn['plug#']
 
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
-if fn.empty(fn.glob(install_path)) > 0 then
-  PACKER_BOOTSTRAP = fn.system {
-    "git",
-    "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
-  }
-  print "Installing packer close and reopen Neovim ... "
-  vim.cmd [[packadd packer.nvim]]
-end
+vim.call("plug#begin")
+  Plug "wbthomason/packer.nvim"
+  Plug "nvim-lua/popup.nvim"
+  Plug "nvim-lua/plenary.nvim"
+  Plug "lunarvim/colorschemes"
 
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
+  Plug "kyazdani42/nvim-tree.lua"
+  Plug "kyazdani42/nvim-web-devicons"
 
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-  return
-end
+  Plug "nvim-lualine/lualine.nvim"
 
-packer.init {
-  display = {
-    open_fn = function()
-      return require("packer.util").float
-    end,
-  },
-}
+  Plug "hrsh7th/nvim-cmp"
+  Plug "hrsh7th/cmp-buffer"
+  Plug "hrsh7th/cmp-path"
+  Plug "hrsh7th/cmp-cmdline"
+  Plug "saadparwaiz1/cmp_luasnip"
+  Plug "hrsh7th/cmp-nvim-lsp"
+  Plug "hrsh7th/cmp-nvim-lua"
 
-return packer.startup(function(use)
+  Plug "L3MON4D3/LuaSnip"
+  Plug "rafamadriz/friendly-snippets"
 
-  use "wbthomason/packer.nvim"
-  use "nvim-lua/popup.nvim"
-  use "nvim-lua/plenary.nvim"
-  use "lunarvim/colorschemes"
+  Plug "neovim/nvim-lspconfig"
+  Plug "williamboman/nvim-lsp-installer"
 
-  use "kyazdani42/nvim-tree.lua"
-  use "kyazdani42/nvim-web-devicons"
+  Plug "scalameta/nvim-metals"
 
-  use "nvim-lualine/lualine.nvim"
+  Plug "windwp/nvim-autopairs"
 
-  use "hrsh7th/nvim-cmp"
-  use "hrsh7th/cmp-buffer"
-  use "hrsh7th/cmp-path"
-  use "hrsh7th/cmp-cmdline"
-  use {
-    "saadparwaiz1/cmp_luasnip",
-    commit = "b10829736542e7cc9291e60bab134df1273165c9"
-  }
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
+  Plug "nvim-telescope/telescope.nvim"
+  Plug "nvim-telescope/telescope-media-files.nvim"
 
-  use "L3MON4D3/LuaSnip"
-  use "rafamadriz/friendly-snippets"
+  Plug "terrortylor/nvim-comment"
 
-  use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
+  Plug "akinsho/toggleterm.nvim"
 
-  use "scalameta/nvim-metals"
+  Plug "folke/which-key.nvim"
 
-  use "windwp/nvim-autopairs"
+  Plug "nvim-treesitter/nvim-treesitter"
+  Plug "p00f/nvim-ts-rainbow"
 
-  use {
-    "nvim-telescope/telescope.nvim",
-    commit = "b7ae91c82b33f8f347fa060208adb3da80ae9260"
-  }
-  use "nvim-telescope/telescope-media-files.nvim"
+  Plug "mhinz/vim-startify"
 
-  use "terrortylor/nvim-comment"
+  Plug "lewis6991/gitsigns.nvim"
+  Plug "tpope/vim-rhubarb"
+  Plug "tpope/vim-fugitive"
 
-  use "akinsho/toggleterm.nvim"
+  Plug "nvim-orgmode/orgmode"
 
-  use "folke/which-key.nvim"
+  Plug "akinsho/bufferline.nvim"
+  Plug "kazhala/close-buffers.nvim"
 
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-    commit = "bc25a6a5c4fd659bbf78ba0a2442ecf14eb00398"
-  }
-  use "p00f/nvim-ts-rainbow"
-
-  use "mhinz/vim-startify"
-
-  use "lewis6991/gitsigns.nvim"
-  use "tpope/vim-rhubarb"
-  use "tpope/vim-fugitive"
-
-  use "nvim-orgmode/orgmode"
-
-  use "akinsho/bufferline.nvim"
-  use "kazhala/close-buffers.nvim"
-
-  use "chentau/marks.nvim"
-
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
-
-end)
+vim.call("plug#end")
