@@ -1,5 +1,5 @@
-local cmp_status_ok, orgmode = pcall(require, "orgmode")
-if not cmp_status_ok then
+local orgmode_status_ok, orgmode = pcall(require, "orgmode")
+if not orgmode_status_ok then
   return
 end
 

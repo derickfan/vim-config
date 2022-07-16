@@ -52,4 +52,6 @@ vim.call("plug#begin")
   Plug "akinsho/bufferline.nvim"
   Plug "kazhala/close-buffers.nvim"
 
+  Plug "SmiteshP/nvim-gps"
+
 vim.call("plug#end")

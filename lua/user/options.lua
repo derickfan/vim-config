@@ -1,4 +1,6 @@
 vim.opt.backup = false
+vim.opt.laststatus = 3
+-- vim.opt_local.winbar = "HELLO"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cmdheight = 1
 vim.opt.completeopt = { "menuone", "noselect" }

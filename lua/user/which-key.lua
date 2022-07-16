@@ -1,5 +1,5 @@
-local cmp_status_ok, whichkey = pcall(require, "which-key")
-if not cmp_status_ok then
+local whichkey_status_ok, whichkey = pcall(require, "which-key")
+if not whichkey_status_ok then
   return
 end
 

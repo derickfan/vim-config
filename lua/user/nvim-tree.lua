@@ -1,5 +1,5 @@
-local cmp_status_ok, nvim_tree = pcall(require, "nvim-tree")
-if not cmp_status_ok then
+local nvim_tree_status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not nvim_tree_status_ok then
   return
 end
 

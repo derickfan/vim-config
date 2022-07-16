@@ -1,17 +1,17 @@
-local cmp_status_ok, lualine = pcall(require, "lualine")
-if not cmp_status_ok then
+local lualine_status_ok, lualine = pcall(require, "lualine")
+if not lualine_status_ok then
   return
 end
 
 lualine.setup {
-  optins = {
+  options = {
     icons_enabled = true,
-    theme = 'gruvbox',
+    -- theme = 'gruvbox',
     component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
     disabled_filetypes = {},
     always_divide_middle = true,
-    -- globalstatus = true, -- upgrade nvim to use
+    globalstatus = true, -- upgrade nvim to use
   },
   sections = {
     lualine_a = {'mode'},

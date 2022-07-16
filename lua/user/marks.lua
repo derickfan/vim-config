@@ -1,5 +1,5 @@
-local cmp_status_ok, marks = pcall(require, "marks")
-if not cmp_status_ok then
+local marks_status_ok, marks = pcall(require, "marks")
+if not marks_status_ok then
   return
 end
 
